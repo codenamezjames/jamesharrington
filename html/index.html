@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en" ng-app="bp" ng-controller="appCtrl">
+  <head>
+    <meta charset="UTF-8">
+    <title ng-bind="title"></title>
+    <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/public/css/styles.css">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
+    <script src="/bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="/bower_components/angular/angular.js"></script>
+    <script src="/bower_components/angular-route/angular-route.js"></script>
+    <script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="/public/js/app.js"></script>
+    <script src="/public/js/routes.js"></script>
+    <script src="/public/js/controllers.js"></script>
+    <script src="/public/js/filters.js"></script>
+  </head>
+  <body>
+    <div class="row" id="header">
+      <nav class="col-xs-10 col-xs-offset-1">
+        <a ng-href="/"><img src="/public/img/jh.png" id="logo" alt=""></a>
+        <ul class="clearfix">
+          <li>
+            <a ng-class="{ activeMenu: activePath=='/projects' }" ng-href="/projects">Projects</a>
+          </li>
+          <li>
+            <a ng-class="{ activeMenu: activePath=='/about' }" ng-href="/about">About</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="container">
+      {{slug}}
+      <div ng-view></div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,23 @@
+<div class="projects">
+  <div class="row" ng-init="page = 1">
+    <div class="col-xs-12">
+      <h2>{{header}}</h2>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-8 col-md-offset-2">
+      <div ng-repeat="project in projects  | filter:display | slice:(page-1)*4:page*4" class="col-md-6 project">
+        <a ng-href="/project/{{project.slug}}"><img src="http://placehold.it/340x340" alt=""></a>
+        <span class="projectTitle">{{project.title}}</span>
+        <span ng-repeat="badge in project.badges">{{badge.skill}}</span>
+      </div>
+    </div>
+    <div class="col-xs-12">
+      <a ng-href=""       ng-show="page !== 1"               ng-click="page = page - 1" class="next_prev prev" ><i class="fa fa-caret-left"></i></a>
+      <a ng-href=""       ng-show="page*4 < projects.length" ng-click="page = page + 1" class="next_prev next" ><i class="fa fa-caret-right"></i></a>
+      <a ng-href="/about" ng-show="page*4 >= projects.length"                           class="next_prev next" ><i class="fa fa-caret-right"></i></a>
+      <a ng-href="/"      ng-show="page == 1"                                           class="next_prev prev" ><i class="fa fa-caret-left"></i></a>
+
+    </div>
+  </div>
+</div>

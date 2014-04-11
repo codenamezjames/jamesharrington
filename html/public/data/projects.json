@@ -1,0 +1,122 @@
+[
+
+    {
+      "id":"1",
+      "slug":"motto",
+      "display":false,
+      "title": "Motto Creative",
+      "url": "http://mottocreative.com",
+      "info": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, possimus quae cumque maiores cum dolorum error? Optio, sit, nobis, tempora, sint facere tempore libero dolorum natus magnam nulla eum inventore.",
+      "proud": true,
+      "badges": [
+        { "skill":"Ruby","degree": 1},
+        { "skill":"HTML/CSS","degree": 3},
+        { "skill":"Javascript","degree": 2}
+      ],
+      "img": "/img/400x400.gif",
+      "imgs":[
+        "/img/site1/image1.png",
+        "/img/site1/image2.png",
+        "/img/site1/image3.png",
+        "/img/site1/image4.png"
+      ]
+    },
+    {
+      "id":"2",
+      "slug":"james",
+      "display":true,
+      "title": "James Donald Harrington",
+      "url": "http://jamesdonaldharrington.com",
+      "info": "This is my own personal site designed coded and launched by me. This site uses HTML JS JQUERY PHP and AJAX. All of the 'projects' in this site are created through a json file that I pull via ajax I use this as a backend of sorts. ",
+      "proud": true,
+      "badges": [
+        { "skill":"HTML/CSS","degree": 3},
+        { "skill":"Javascript","degree": 2}
+      ],
+      "img": "/img/jamesdonaldharrington/image1.png",
+      "imgs":[
+        "/img/jamesdonaldharrington/image1.png",
+        "/img/jamesdonaldharrington/image2.png"
+      ]
+    },
+    {
+      "id":"3",
+      "slug":"barker",
+      "display":true,
+      "title": "Barker And Sons",
+      "url": "http://barker.ideaworksinteractive.com/",
+      "info": "Barker and Sons is a site that I did while working with a company called Motto Creative. I was responsible for project manging, and coding  the whole site. It is a word press site.",
+      "proud": false,
+      "badges": [
+        { "skill":"PHP","degree": 1},
+        { "skill":"HTML/CSS","degree": 3},
+        { "skill":"Javascript","degree": 2}
+      ],
+      "img": "/img/barker/image1.png",
+      "imgs":[
+        "/img/barker/image1.png",
+        "/img/barker/image2.png"
+      ]
+    },
+    {
+      "id":"4",
+      "slug":"bitshuffle",
+      "display":true,
+      "title": "Bit Shuffle",
+      "url": "bitmix/index.html",
+      "info": "Bit Shuffle is a really cool story. Every year Pensacola hosts an event called start up weekend. A bunch of entrepreneurs, designers, and developers get together for 54 hours and start a tech company from the ground up. This was the project I worked on. As far as code goes it is HTML JS JQURY and PYTHON.  I worked on the front end. The site is a standalone site that communicates with a python api via jquerys ajax.",
+      "proud": true,
+      "img": "/img/bitmix/image1.png",
+      "imgs":[
+        "/img/bitmix/image1.png",
+        "/img/bitmix/image2.png",
+        "/img/bitmix/image3.png"
+      ]
+    },
+    {
+      "id":"5",
+      "slug":"ideaworks",
+      "display":true,
+      "title": "Ideaworks",
+      "url": "http://ideaworksusa.com",
+      "info": "This site was crazy 60+ hours on just the front end. I worked closely with Brittany Miller (Costumer manager /  Technical director / SEO guru / Awesome person ). The story behind this site is amazing! Message me about it. This site consists of HTML CSS JS JQUERY and has plans to be ruby on rails.",
+      "proud": true,
+      "img": "/img/ideaworks/image1.png",
+      "imgs":[
+        "/img/ideaworks/image1.png",
+        "/img/ideaworks/image2.png",
+        "/img/ideaworks/image3.png"
+      ]
+    },
+    {
+      "id":"6",
+      "slug":"sixreasons",
+      "display":true,
+      "title": "Six Reasons",
+      "url": "http://sixreasons.net/",
+      "info": "Also another great story. It was days before the Pensacola's HMO campaign and I was approached by Brittany Miller of Ideaworks, who had just closed a deal on a marketing a site for this campaign . We then sat down and went over the site, we had to make it in less than 2 days. So 16 hours and 5 cans of coke later it was complete and might I say it is a beautiful site. The site consists of  HTML CSS JS JQUERY and Has an integration with Mad Mimi",
+      "proud": true,
+      "img": "/img/sixreasons/image1.png",
+      "imgs":[
+        "/img/sixreasons/image1.png",
+        "/img/sixreasons/image2.png",
+        "/img/sixreasons/image3.png"
+      ]
+    },
+    {
+      "id":"7",
+      "slug":"edenmobi",
+      "display":true,
+      "title": "Eden Mobile",
+      "url": "http://edencondominom.com",
+      "info": "Eden condominiums is a resort in Perdido Key Florida, Motto Creative a studio that I worked for an part owned was contracted through Ideaworks to create a mobile site for Eden Condominiums. This site includes HTML CSS JS and JQUERY.",
+      "proud": false,
+      "img": "/img/eden/image1.png",
+      "imgs":[
+        "/img/eden/image1.png",
+        "/img/eden/image2.png",
+        "/img/eden/image3.png",
+        "/img/eden/image4.png"
+      ]
+    }
+]

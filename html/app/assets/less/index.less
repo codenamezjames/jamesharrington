@@ -1,0 +1,131 @@
+// START VARIABLES //
+
+@siteColor: #38A6C9; // #38A6C9 = blue
+@gradientStart:spin(saturate(darken(@siteColor, 20%), 50%), 5%);
+@gradientEnd:spin(saturate(darken(@siteColor, 10%), 10%), -10%);
+
+@linkColor:#FFF;
+
+
+
+// END VARIABLES //
+//
+//
+//  START MIXINS //
+.gradient (@startColor: #eee, @endColor: white) {
+  background-color: @startColor;
+  background: -webkit-gradient(linear, top left, top right, from(@startColor), to(@endColor));
+  background: -webkit-linear-gradient(left, @startColor, @endColor);
+  background: -moz-linear-gradient(left, @startColor, @endColor);
+  background: -ms-linear-gradient(left, @startColor, @endColor);
+  background: -o-linear-gradient(left, @startColor, @endColor);
+}
+//  END MIXINS //
+//
+//
+// START INDEX //
+
+html,body,.container.ng-scope,.index,.index div{
+  height:100%;
+}// HTML, BODY ....
+
+body{
+  .gradient(@gradientStart, @gradientEnd);
+  color:white;
+}//BODY
+
+a{
+  color:@linkColor;
+  &:hover{
+    text-decoration: none;
+    color:@linkColor;
+    cursor: pointer;
+  }
+}//A
+
+#header{
+  background:@siteColor;
+  box-shadow: 1px 0px 3px rgba(0, 0, 0, 0.5);
+  #logo{
+    float:left;
+    position: absolute;
+    top:50%;
+    -webkit-transform: translate(0%,-50%);
+      -ms-transform: translate(0%,-50%);
+          transform: translate(0%,-50%);
+  }
+  nav{
+
+    ul{
+      margin: 0;
+      list-style-type: none;
+      float: right;
+      li{
+        float:left;
+        .activeMenu{
+          text-decoration: none;
+          color:@linkColor;
+          background:darken(@siteColor, 5%);
+          box-shadow:0px 0px 2px rgba(0, 0, 0, 0.5);
+          text-shadow: 0 0 0px white;
+        }
+        a{
+          display: block;
+          padding: 20px 35px;
+          &:hover{
+            text-decoration: none;
+            color:@linkColor;
+            text-shadow: 0 0 0px white;
+          }//:HOVER
+        }//A
+      }//LI
+    }//UL
+  }//NAV
+}//HEADER
+
+.index{
+  h1,h2{
+    color: rgba(255, 255, 255, 0.7);
+    text-align: center;
+  }//H1 H2
+  #name{
+   color:rgba(255, 255, 255, 1);
+  }
+  #intro{
+    margin: 0px;
+    position: relative;
+    top:50%;
+    margin-top: -82px;
+  }//INTRO
+}//INDEX
+
+.projects{
+
+  .project{
+    text-align: center;
+    .projectTitle{
+      position: relative;
+      font-size: 30px;
+    }
+  }
+}// PROJECTS
+.next_prev{
+  color:rgba(255,255,255, 0.2);
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translate(0%, -50%);
+  -ms-transform: translate(0%, -50%);
+  transform: translate(0%, -50%);
+  font-size: 80px;
+  &:hover{
+    color:rgba(255,255,255, 0.4);
+  }
+}
+
+
+.next{
+  right: 10px;
+}
+.prev{
+  left: 10px;
+}
