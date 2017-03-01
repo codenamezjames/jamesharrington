@@ -12,7 +12,7 @@ export default gulp.series(
     transpile,
     processMarkup,
     processCSS,
-    processSASS
+    // processSASS
   ),
   writeBundles
 );
