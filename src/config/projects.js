@@ -1,7 +1,38 @@
-[
+export default [
     {
         title: 'JamesHarrington.com',
-        img: 'http://lorempixel.com/400/200/abstract/',
-        blurb: 'Excepteur sunt do deserunt ut aute ipsum commodo magna ea eu cillum. Anim voluptate ipsum non reprehenderit dolore labore Lorem fugiat aliqua excepteur. Ad in deserunt cupidatat amet. Aliqua tempor non commodo cillum culpa. Incididunt ipsum veniam velit sit exercitation consectetur nisi. Nostrud consectetur elit et veniam. Cillum irure enim reprehenderit minim aliqua aliquip cillum aliquip.'
+        img: {
+            src: 'http://lorempixel.com/400/400/abstract/',
+            alt: 'lorem pixle'
+        },
+        blurb: 'Cillum reprehenderit id exercitation fugiat id et.',
+        discription: 'Laboris nulla aliqua velit aute nostrud dolor pariatur sunt do deserunt qui. Eu sunt eiusmod in eu laboris duis cillum. Est elit labore pariatur excepteur nulla in tempor cillum. Sunt mollit deserunt quis nisi consectetur laborum elit id enim. Anim eu amet consequat voluptate consectetur nostrud. Enim ut cupidatat mollit dolore aliquip ex sunt ipsum officia.'
+    },
+    {
+        title: 'JamesHarrington.com',
+        img: {
+            src: 'http://lorempixel.com/400/400/abstract/',
+            alt: 'lorem pixle'
+        },
+        blurb: 'Cillum reprehenderit id exercitation fugiat id et.',
+        discription: ''
+    },
+    {
+        title: 'JamesHarrington.com',
+        img: {
+            src: 'http://lorempixel.com/400/400/abstract/',
+            alt: 'lorem pixle'
+        },
+        blurb: 'Cillum reprehenderit id exercitation fugiat id et.',
+        discription: ''
+    },
+    {
+        title: 'JamesHarrington.com',
+        img: {
+            src: 'http://lorempixel.com/400/400/abstract/',
+            alt: 'lorem pixle'
+        },
+        blurb: 'Cillum reprehenderit id exercitation fugiat id et.',
+        discription: 'Laboris nulla aliqua velit aute nostrud dolor pariatur sunt do deserunt qui. Eu sunt eiusmod in eu laboris duis cillum. Est elit labore pariatur excepteur nulla in tempor cillum. Sunt mollit deserunt quis nisi consectetur laborum elit id enim. Anim eu amet consequat voluptate consectetur nostrud. Enim ut cupidatat mollit dolore aliquip ex sunt ipsum officia.'
     }
 ]

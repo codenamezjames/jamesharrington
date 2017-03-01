@@ -1,5 +1,7 @@
+import projects from '../../config/projects'
+
 export class index {
     constructor(){
-        this.info = 'stuff'
+        this.projects = projects
     }
 }
