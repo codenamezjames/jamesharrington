@@ -1,0 +1,74 @@
+@import "../node_modules/foundation-sites/dist/css/foundation-flex.min.css"
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700')
+
+baseColor = #226764
+accentColor = #A8383B
+greyColor = #94A09F
+
+.area
+    padding: 3.5rem
+
+.image-text
+    color: white
+    font-family: 'Open Sans', sans-serif
+    &.headers
+        text-shadow: -2px 1px 1px rgba(0, 0, 0, 0.5)
+
+.mega
+    color: baseColor
+    &h1
+        font-size:3em
+    &h2
+        font-size:2em
+    &h3
+        font-size:1em
+.super
+    color: accentColor
+
+.plain
+    color: greyColor
+
+section
+    margin-bottom: 4rem
+    margin-top: 4rem
+
+ul.simple
+    list-style: none
+
+@media screen and (min-width: 640px)
+    .fullHeight
+        min-height: 100vh
+
+.round-image
+    border-radius: 50%
+
+.button
+    padding-left: 30px
+    padding-right: 30px
+    &.accent
+        background: accentColor
+        &:hover
+            background: darken(accentColor, 10%)
+
+footer
+    text-align: center
+    display: block
+    background-image: url('/src/images/background.jpg')
+    background-size: cover
+    background-position-y: bottom
+    background-position-x: center
+    padding: 40px 0;
+    @media screen and (min-width: 640px)
+        background-image: none
+        position: absolute
+        right: 0px
+        left: 0;
+        bottom: 0;
+        transform: translateX(0%);
+    .social 
+        display: inline-block
+        a 
+            padding: 0 10px
+    .icons a 
+        font-size: 1.7em
+        color: rgba(255, 255, 255, 0.6)

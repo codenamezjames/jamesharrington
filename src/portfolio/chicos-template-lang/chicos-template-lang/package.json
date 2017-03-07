@@ -1,0 +1,26 @@
+{
+  "name": "chicos-template-lang",
+  "version": "0.0.1",
+  "description": "this is a simple template language for chicosFAS",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "karma start"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jasmine-core": "^2.5.2",
+    "karma": "^1.5.0",
+    "karma-chrome-launcher": "^2.0.0",
+    "karma-firefox-launcher": "^1.0.0",
+    "karma-jasmine": "^1.1.0",
+    "karma-phantomjs-launcher": "^1.0.2",
+    "phantomjs": "^2.1.7"
+  },
+  "dependencies": {
+    "jasmine": "^2.5.3"
+  }
+}

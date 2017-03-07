@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="/css/screen.css">
+<title>James Harrington</title>
+
+</head>
+
+<body style="display:none;">
+	
+	<header>
+	</header>
+
+	<article>
+		<div class="row">
+			<div class="large-10 large-centered column">
+				<h2>Admin Login</h2>
+				<form action="/php/login.php"method="post">
+					<input type="text" name="username">
+					<input type="password" name="password">
+					<input type="submit" value="Login" class="button">
+				</form>
+			</div>
+		</div>
+	</article>
+
+	<div class="push">
+	</div>
+
+	<footer>
+	</footer>
+
+	<script src="/js/vendor/custom.modernizr.js"></script>
+	<script src="/js/vendor/jquery.js"></script>
+	<script src="/js/vendor/placeholder.js"></script>
+	<script src="/js/foundation.min.js"></script>
+	<script src="/js/main.js"></script>
+	<script>
+		if (window.location.hash) {
+			$('body').prepend('<div data-alert class="alert-box alert radius" style="position:absolute; width:400px; left:50%; margin-left:-200px; z-index:99; text-align:center;">'+window.location.hash.substring(1)+'<a href="#" class="close">&times;</a></div>')
+			setTimeout(function() {$('.alert-box').slideUp()}, 3000);
+		};
+	</script>
+</body>
+</html>

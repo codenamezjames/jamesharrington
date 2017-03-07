@@ -1,0 +1,197 @@
+/**************************************************************************************
+	/CSS/SCREEN.CSS 
+	AUTHOR:JAMES HARRINGTON
+	DATE: DEC-17-2013
+***************************************************************************************/
+
+@import url("normalize.css");
+@import url("foundation.min.css");
+
+
+
+
+
+/***************************************************************************************
+	GENERAL
+***************************************************************************************/
+html, body{height: 100%;}
+body{ background: #d8d8d8;} 
+h1,h2,h3,h4,h5,h6{color: #403E5C; font-family: "Open Sans";}
+/**************************************************************************************
+	GENERAL END
+***************************************************************************************
+/
+/
+/
+***************************************************************************************
+	HEADER
+***************************************************************************************/
+header{
+	background: #444;
+	color: white;
+}
+header p{
+	margin-bottom: 0;
+	font-size: 22px;
+	font-family: "Open Sans";
+}
+.logo{
+	margin: 50px 0px 50px 100px;
+	font-size: 18px;
+}
+/**************************************************************************************
+	HEADER END
+***************************************************************************************
+/
+/
+/
+***************************************************************************************
+	MENU 
+***************************************************************************************/
+ul{
+	margin: 60px 0 0 0;
+	
+}
+.menu li{
+	list-style-type: none;
+	font-size: 18px;
+	line-height: 1.5;
+	margin-bottom: 3px;
+	padding-left: 10px;
+	border-left: solid 4px;
+	transition:all 0.1s ease-in;
+}
+.menu li a{
+	font-family: "Open Sans";
+	color: white;
+}
+.menu li:hover{
+	padding-left: 12px;
+}
+.menu .item1{
+	border-color: #FD5050;
+}
+.menu .item2{
+	border-color: #7AFF6C;
+}
+.menu .item3{
+	border-color: #867AFF;
+}
+.menu_box{
+	box-shadow: -8px 0px 7px #333;
+height: 210px;
+padding-left: 0px;
+}
+
+/**************************************************************************************
+	MENU END
+***************************************************************************************
+/
+/
+/
+***************************************************************************************
+	ARTICLE
+***************************************************************************************/
+article{
+	background: #d8d8d8;
+	font-weight: 400;
+	color: #403E5C;
+}
+article p{
+	font-family: "Open Sans";
+	padding: 0 120px 0 120px;
+}
+article h2{
+	margin-top: 40px;
+	padding: 0 110px 0 110px;
+}
+article #title{
+	margin-top: 0 !important;
+	padding: 0 !important;
+}
+.five-k{
+	padding-left: 25%;
+}
+.ten-k{
+	padding-left: 50%
+}
+#list{
+	margin-top: 20px;
+}
+#imageHolder img{
+	box-shadow: 1px 1px 3px #555;
+	margin-bottom: 30px;
+}
+.cover{
+	width: 30%!important;
+	margin-right: 1%;
+	padding: 0!important;
+	margin-bottom: 10px;
+	height: 254px!important;
+	overflow: hidden;
+	box-shadow: 2px 2px 4px rgba(68, 68, 68, 0.5);
+}
+.cover img{
+	width: 100%;
+}
+/**************************************************************************************
+	ARTICLE END
+***************************************************************************************
+/
+/
+/
+***************************************************************************************
+	FOOTER
+**************************************************************************************/
+.push{
+	background-color: #d8d8d8;
+}
+footer{
+	background-color: #d8d8d8;
+	overflow: hidden;
+	font-family: "Open Sans";
+}
+footer img{
+	padding-top: 100px;
+	position: relative;
+	top: 30px;
+	transition: all 0.2s ease-in;
+}
+footer img:hover{
+	top: 0px;
+}
+#browser{
+	display: block;
+	float: right;
+	margin-right:50px; 
+
+}
+#phone{
+	display: block;
+	float: left;	
+}
+/**************************************************************************************
+	FOOTER END
+***************************************************************************************
+/
+/
+/
+***************************************************************************************
+	ERROR HANDELING
+***************************************************************************************/
+input.error, .error, .error input{
+	background-color: #F09DAB;
+	border:solid thin red;
+	margin: 0 0 1rem 0;
+	padding: 0.5rem;
+	transition:all 0.6s ease-in;
+}
+
+#error_message {
+	margin-bottom: 20px;
+	color:#333;
+	display: none;
+}
+/**************************************************************************************
+	ERROR HANDELING END
+***************************************************************************************/

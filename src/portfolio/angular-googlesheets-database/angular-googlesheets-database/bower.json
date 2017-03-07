@@ -1,0 +1,23 @@
+{
+  "name": "angular-googlesheets-database",
+  "version": "0.2.0",
+  "authors": [
+    "James <indoisfun@gmail.com>"
+  ],
+  "description": "This snippet is designed to get all sheets of a google sheets workbook and return them in json format using promises.",
+  "main": "angular-googlesheets-database.js",
+  "keywords": [
+    "angular",
+    "database",
+    "google",
+    "sheets"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

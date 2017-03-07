@@ -1,0 +1,21 @@
+baseColor = #226764
+accentColor = #A8383B
+greyColor = #94A09F
+.fancyInput
+    margin-top:20px
+    position: relative
+    input[type=text], textarea
+        resize: none
+        transition: border-bottom-color 200ms
+        border: none;
+        border-bottom: solid 2px #95a1a0;
+        box-shadow: none;
+    input:valid + span, textarea:valid + span, input:focus + span, textarea:focus + span
+        top: -27px
+    input:focus, textarea:focus
+        border-bottom-color: baseColor
+    span
+        transition: top 150ms
+        position: absolute
+        top: 7px
+        left: 10px

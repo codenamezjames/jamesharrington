@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="/css/screen.css">
+<title>James Harrington</title>
+
+</head>
+
+<body style="display:none;">
+
+	<header>
+	</header>
+
+	<article>
+	<a href="/admin.html" style="width:32px; height:32px; position:absolute;top:0;left:0;opacity:0;"></a>
+		<div class="row">
+			<div class="large-10 large-centered column">
+				<h2>Hey I'm James</h2>
+				<p>
+					I'm a web developer, an entrepreneur and I want to work with you. My skills include HTML CSS JS JQUERY my practices include RUBY RAILS PHP. I'm a fast learner and a great communicator. click  &nbsp; 
+					<a href="contact.html">Contact Me ></a> to get in touch!
+				</p>
+			</div>
+		</div>
+	</article>
+
+	<div class="push">
+	</div>
+
+	<footer>
+	</footer>
+
+	<script src="/js/vendor/custom.modernizr.js"></script>
+	<script src="/js/vendor/jquery.js"></script>
+	<script src="/js/vendor/placeholder.js"></script>
+	<script src="/js/foundation.min.js"></script>
+	<script src="/js/main.js"></script>
+	<script>
+	jQuery(document).ready(function($) {
+		$(document).on('click', '.close', function(event) {
+			event.preventDefault();
+			$(this).closest('div').slideUp()
+		});
+	});
+	if (window.location.hash) {
+		$('body').prepend('<div data-alert class="alert-box success radius" style="position:absolute; width:400px; left:50%; margin-left:-200px; z-index:99; text-align:center;">'+window.location.hash.substring(1)+'<a href="#" class="close">&times;</a></div>')
+		setTimeout(function() {$('.alert-box').slideUp()}, 3000);
+	};
+	</script>
+</body>
+</html>

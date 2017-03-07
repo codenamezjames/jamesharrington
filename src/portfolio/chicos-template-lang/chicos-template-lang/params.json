@@ -1,0 +1,6 @@
+{
+  "name": "Chicos-template-lang",
+  "tagline": "",
+  "body": "Usage\r\n\r\n\r\n\r\n          ${header overwrite=\"#gps(\r\n            <h1>Header</h1>\r\n            <h1>Header</h1>\r\n          )\" }\r\n\r\n          <div class=\"container\">\r\n            This is content that should survive\r\n          </div>\r\n\r\n          ${footer overwrite=\"#gps(\r\n            <div>\r\n              <h1>Footer</h1>\r\n            </div>\r\n            <h1>Footer</h1>\r\n          )\" }\r\n\r\n          <script src=\"https://jamesharrington.github.io/chicos-template-lang/src/index.js\"></script>\r\n          <script>\r\n              document.body.innerHTML = chsParser.render(document.body.innerHTML, {\r\n                header:`\r\n                  <div> \r\n                    <div id=\"gps\">\r\n                      <h1>replaceme</h1>\r\n                    </div>\r\n                  </div>\r\n                `,\r\n                footer:`\r\n                  <div> \r\n                    <div id=\"gps\">\r\n                      <h1>replaceme</h1>\r\n                    </div>\r\n                  </div>\r\n                `\r\n              })\r\n          </script>",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}

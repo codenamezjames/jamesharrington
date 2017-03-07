@@ -1,0 +1,14 @@
+<template>
+  <require from="./image-card.css"></require>
+  <a class="card">
+    <div class="image-wrap">
+      <img src.one-time="project.img.src" alt.one-time="project.img.alt" style="width:100%;">
+      <div class="overlay"></div>
+    </div>
+
+    <div class="card-section">
+      <h4 class="mega" style="margin-bottom:0;">${project.title}</h4>
+      <p class="plain">${project.blurb}</p>
+    </div>
+  </a>
+</template>

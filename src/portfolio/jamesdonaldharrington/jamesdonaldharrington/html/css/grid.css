@@ -1,0 +1,84 @@
+*, *:before, *:after {
+-moz-box-sizing: border-box;
+-webkit-box-sizing: border-box;
+box-sizing: border-box;
+}
+.row{
+	width: 800px;
+	margin:0 auto;
+}
+.row .row:before, .row .row:after {
+content: " ";
+display: table;
+}
+.row .row:after {
+clear: both;
+}
+.row:after {
+clear: both;
+}
+.row:before, .row:after {
+content: " ";
+display: table;
+}
+.column_1{
+	width:8.33333%;
+	float: left;
+
+}
+.column_2{
+	width:16.66667%;
+	float: left;
+
+
+}
+.column_3{
+	width:25%;
+	float: left;
+
+}
+.column_4{
+	width:33.33333%;
+	float: left;
+
+}
+.column_5{
+	width:41.66667%;
+	float: left;
+
+}
+.column_6{
+	width:50%;
+	float: left;
+
+}
+.column_7{
+	width:58.33333%;
+	float: left;
+
+}
+.column_8{
+	width:66.66667%;
+	float: left;
+
+}
+.column_9{
+	width:75%;
+	float: left;
+
+}
+.column_10{
+	width:83.33333%;
+	float: left;
+
+}
+.column_11{
+	width:91.66667%;
+	float: left;
+
+}
+.column_12{
+	width:100%;
+	float: left;
+
+}
