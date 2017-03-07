@@ -1,0 +1,6 @@
+
+export class index {
+    constructor(){
+
+    }
+}

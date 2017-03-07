@@ -6,7 +6,7 @@ export class App {
     config.map([
       {route:['', 'home'], name:'home', moduleId:'public/home/index'},
       {route:'projects', name:'projects', moduleId:'public/projects/index'},
-      {route:'contact', name:'contact', moduleId:'public/projects/index'}
+      {route:'about', name:'about', moduleId:'public/about/index'}
     ])
     config.mapUnknownRoutes('public/not-found/index')
   }

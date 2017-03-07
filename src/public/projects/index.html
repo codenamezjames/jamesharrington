@@ -1,8 +1,10 @@
 <template>
-  <require from="../../resources/elements/projects"></require>
+  <require from="../../resources/elements/image-card"></require>
   <require from="./index.css"></require>
   
-  <ul>
-    <projects projects.bind="projects">
+  <ul class="row small-up-1 medium-up-2 simple">
+    <li repeat.for="project of projects" class="column column-block">
+      <image-card project.bind="project"></image-card>
+    </li>
   </ul>
 </template>

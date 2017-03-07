@@ -3,122 +3,90 @@
   <require from="../../resources/elements/image-card"></require>
   <require from="../../resources/elements/fancy-input"></require>
 
-  <div class="row expanded">
-    <div class="medium-4 small-12 column backdrop fullHeight text-center area">
+  
 
-      <img src="/src/images/james300.jpg" alt="Photo of James Harrington" class="me round-image">
-      <h2 class="image-text headers">
-        Hello, my name is <br>James Harrington
-      </h2>
-      <p class="image-text paragraph">
-        Programmer by day. <br>Super dad by night!
+  <article>
+
+    <section>
+      <h2 class="mega">Just a little bit about me</h2>
+      <p class="plain">
+        I'm a self taught fast learning web developer, I started developing in 2010 when I decided to open my own photography business. After making a few version of my own site I found that i really loved web development. I very quickly realized that the web industry was for me.
       </p>
+      <a href="/about" class="button accent">
+        Learn More
+      </a>
+    </section>
 
-    </div>
-    <div class="medium-8 small-12 column area scroll-large">
-      <article>
+    <hr>
 
-        <section>
-          <h2 class="mega">Just a little bit about me</h2>
-          <p class="plain">
-            I'm a self taught fast learning web developer, I started developing in 2010 when I decided to open my own photography business. After making a few version of my own site I found that i really loved web development. I very quickly realized that the web industry was for me.
-          </p>
-          <a href="/about" class="button accent">
-            Learn More
-          </a>
-        </section>
+    <section>
+      <h2 class="mega">
+        Recent Projects
+      </h2>
+      <ul class="row small-up-1 medium-up-2 simple">
+        <li repeat.for="project of projects" class="column column-block">
+          <image-card project.bind="project"></image-card>
+        </li>
+      </ul>
+      <a href="/projects" class="button accent">
+        View All Projects
+      </a>
+    </section>
 
-        <hr>
+    <hr>
 
-        <section>
-          <h2 class="mega">
-            Recent Projects
-          </h2>
-          <ul class="row small-up-1 medium-up-2 simple">
-            <li repeat.for="project of projects" class="column column-block">
-              <image-card project.bind="project"></image-card>
-            </li>
-          </ul>
-          <a href="" class="button accent">
-            View All Projects
-          </a>
-        </section>
+    <section>
+      <form submit.delegate="submitContact()">
+        <h2 class="mega">
+          Talk to me
+        </h2>
+        <div class="row">
+          <div class="small-12 large-8 columns">
 
-        <hr>
-
-        <section>
-          <form>
-            <h2 class="mega">
-              Talk to me
-            </h2>
             <div class="row">
-              <div class="small-12 large-8 columns">
-
-                <div class="row">
-                  <div class="medium-6 columns">
-                    <fancy-input label="Name">
-                      <input type="text" required="">
-                    </fancy-input>
-                  </div>
-                  <div class="medium-6 columns">
-                    <fancy-input label="Email">
-                      <input type="text" required="">
-                    </fancy-input>
-                  </div>
-                  <div class="medium-12 column">
-                    <fancy-input label="Message">
-                      <textarea name="message" rows="6" required=""></textarea>
-                    </fancy-input>
-                  </div>
-                </div>
-
+              <div class="medium-6 columns">
+                <fancy-input label="Name">
+                  <input type="text" required="" value.bind="contact.name">
+                </fancy-input>
               </div>
-              <div class="small-12 large-4 columns">
-
-                <ul class="simple personalInfo">
-                  <li>
-                    <h3 class="fa fa-home"></h3>
-                    320 W Sunset Ave<br> Pensacoal, FL 32507<br> United States
-                  </li>
-
-                  <li>
-                    <h3 class="fa fa-mobile"></h3>
-                    (850) 529-9296
-                  </li>
-
-                  <li>
-                    <h3 class="fa fa-envelope-o"></h3>
-                    <a href="mailto://Hello@jamesdonaldharrington.com">Hello@jamesdonaldharrington.com</a>
-                  </li </ul>
-
+              <div class="medium-6 columns">
+                <fancy-input label="Email">
+                  <input type="text" required="" value.bind="contact.email">
+                </fancy-input>
+              </div>
+              <div class="medium-12 column">
+                <fancy-input label="Message">
+                  <textarea name="message" rows="6" required="" value.bind="contact.message"></textarea>
+                </fancy-input>
               </div>
             </div>
-            <div class="button accent">
-              Send
-            </div>
-          </form>
-        </section>
-      </article>
-    </div>
 
-    <footer class="medium-4 small-12 column">
+          </div>
+          <div class="small-12 large-4 columns">
 
-      <div class="social">
-        <ul class="icons menu align-right">
-          <li>
-            <a href="https://twitter.com/jdhprogrammer" class="fa fa-twitter"></a>
-          </li>
-          <li>
-            <a href="https://github.com/jamesharrington" class="fa fa-github"></a>
-          </li>
-          <li>
-            <a href="mailto://Hello@jamesdonaldharrington.com" class="fa fa-envelope-o"></a>
-          </li>
-        </ul>
-      </div>
-      
-    </footer>
+            <ul class="simple personalInfo">
+              <li>
+                <h3 class="fa fa-home"></h3>
+                320 W Sunset Ave<br> Pensacoal, FL 32507<br> United States
+              </li>
 
-  </div>
+              <li>
+                <h3 class="fa fa-mobile"></h3>
+                (850) 529-9296
+              </li>
+
+              <li>
+                <h3 class="fa fa-envelope-o"></h3>
+                <a href="mailto://Hello@jamesdonaldharrington.com">Hello@jamesdonaldharrington.com</a>
+              </li </ul>
+
+          </div>
+        </div>
+        <input type="submit" class="button accent" value="send">
+        
+      </form>
+    </section>
+  </article>
+
 
 </template>
