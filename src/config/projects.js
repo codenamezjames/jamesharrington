@@ -3,52 +3,72 @@ export default [
         title: 'Vision 2015',
         images: [
             {
-                src: '/src/portfolio/vision2015/screen-shot-1.png',
+                src: '/portfolio/vision2015/screen-shot-1.png',
                 alt: 'lorem pixle'
             },
             {
-                src: '/src/portfolio/vision2015/screen-shot-2.gif',
+                src: '/portfolio/vision2015/screen-shot-2.gif',
                 alt: 'lorem pixle'
             },
             {
-                src: '/src/portfolio/vision2015/screen-shot-3.gif',
+                src: '/portfolio/vision2015/screen-shot-3.png',
                 alt: 'lorem pixle'
             }
         ],
-        blurb: 'Cillum reprehenderit id exercitation fugiat id et.',
-        discription: 'https://github.com/jamesharrington/dumbpaste'
+        blurb: 'Freelance project for a local marketing firm',
+        discription: 'https://github.com/jamesharrington/vision2015'
     },
     {
-        title: 'JamesHarrington.com',
+        title: 'JamesDonaldHarrington.com',
         images: [
             {
-                src: 'http://lorempixel.com/400/400/abstract/',
-                alt: 'lorem pixle'
+                src: '/portfolio/jamesdonaldharrington/screen-shot-1.png',
+                alt: 'jamesdonaldharrington home screen'
+            },
+            {
+                src: '/portfolio/jamesdonaldharrington/screen-shot-2.png',
+                alt: ''
+            },
+            {
+                src: '/portfolio/jamesdonaldharrington/screen-shot-3.png',
+                alt: ''
             }
         ],
-        blurb: 'Cillum reprehenderit id exercitation fugiat id et.',
+        blurb: 'My personal site from back in the day',
         discription: ''
     },
     {
-        title: 'JamesHarrington.com',
+        title: 'dumbpaste.com',
         images: [
             {
-                src: 'http://lorempixel.com/400/400/abstract/',
+                src: '/portfolio/dumbpaste/screen-shot-1.png',
+                alt: 'lorem pixle'
+            },
+            {
+                src: '/portfolio/dumbpaste/screen-shot-2.png',
+                alt: 'lorem pixle'
+            },
+            {
+                src: '/portfolio/dumbpaste/screen-shot-3.png',
                 alt: 'lorem pixle'
             }
         ],
-        blurb: 'Cillum reprehenderit id exercitation fugiat id et.',
+        blurb: 'A weekend project designed to let you store bits of code.',
         discription: ''
     },
     {
-        title: 'JamesHarrington.com',
+        title: 'Angular Google Sheets Database',
         images: [
             {
-                src: 'http://lorempixel.com/400/400/abstract/',
+                src: '/portfolio/angular-googlesheets-database/screen-shot-1.png',
+                alt: 'lorem pixle'
+            },
+            {
+                src: '/portfolio/angular-googlesheets-database/screen-shot-2.png',
                 alt: 'lorem pixle'
             }
         ],
-        blurb: 'Cillum reprehenderit id exercitation fugiat id et.',
+        blurb: 'An angular 1.X service that pulls info from a Google Sheets spread sheet',
         discription: 'Laboris nulla aliqua velit aute nostrud dolor pariatur sunt do deserunt qui. Eu sunt eiusmod in eu laboris duis cillum. Est elit labore pariatur excepteur nulla in tempor cillum. Sunt mollit deserunt quis nisi consectetur laborum elit id enim. Anim eu amet consequat voluptate consectetur nostrud. Enim ut cupidatat mollit dolore aliquip ex sunt ipsum officia.'
     }
 ]

@@ -331,6 +331,13 @@ aurelia-history@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/aurelia-history/-/aurelia-history-1.0.0.tgz#3b3a47eea34a2c2cb17e46d4fbe3565fa7461149"
 
+aurelia-http-client@^1.0.4:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/aurelia-http-client/-/aurelia-http-client-1.0.4.tgz#beec58db93b46db8ff511ae47f83d29d9fad7a76"
+  dependencies:
+    aurelia-pal "^1.0.0"
+    aurelia-path "^1.0.0"
+
 aurelia-loader-default@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/aurelia-loader-default/-/aurelia-loader-default-1.0.1.tgz#5f526453417245739003ddf6b381f4400a21d4c0"
