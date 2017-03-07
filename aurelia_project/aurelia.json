@@ -16,25 +16,25 @@
         "transform-es2015-modules-amd"
       ]
     },
-    "source": "src/**/*.js"
+    "source": ["src/**/*.js", "!portfolio/**/*"]
   },
   "markupProcessor": {
     "id": "none",
     "displayName": "None",
     "fileExtension": ".html",
-    "source": "src/**/*.html"
+    "source": ["src/**/*.html", "!portfolio/**/*"]
   },
   "cssProcessor": {
     "id": "stylus",
     "displayName": "Stylus",
     "fileExtension": ".styl",
-    "source": "src/**/*.styl"
+    "source": ["src/**/*.styl", "!portfolio/**/*"]
   },
   "sassProcessor": {
     "id": "sass",
     "displayName": "Sass",
     "fileExtension": ".scss",
-    "source": "src/**/*.scss"
+    "source": ["src/**/*.scss", "!portfolio/**/*"]
   },
   "editor": {
     "id": "vscode",
@@ -43,7 +43,7 @@
   "unitTestRunner": {
     "id": "karma",
     "displayName": "Karma",
-    "source": "test/unit/**/*.js"
+    "source": ["test/unit/**/*.js", "!portfolio/**/*"]
   },
   "paths": {
     "root": "src",
@@ -88,10 +88,15 @@
     "bundles": [
       {
         "name": "app-bundle.js",
-        "source": [
-          "[**/*.js]",
-          "**/*.{css,html}"
-        ]
+        "source": {
+          "include": [
+            "[**/*.js]",
+            "**/*.{css,html}"
+          ],
+          "exclude": [
+            "**/portfolio/**/*"
+          ]
+        }
       },
       {
         "name": "vendor-bundle.js",
