@@ -7,17 +7,13 @@ export class index {
     constructor(){
         this.projects = projects
     }
-    submitContact(){
-        const url = 'https://maker.ifttt.com/trigger/contact/with/key/bR8ZKb3setep__kjb2YU9YGgWgsmDiq1dI7xFqYMMV6'
-
-        console.log(this.contact)
-        client.post({
-            url, 
-            content:{"value1":JSON.stringify(this.contact, null, 2)} 
-        })
-        // .then(response => response.json())
-        .then(data => {
-            console.log(data)
-        })
+    submitContact(form){
+        console.log(form)
+        // client.post('http://64.137.217.6:3000/mail', this.contact)
+        //   .then((d) => {
+        //       console.log(d)
+        //       this.contact = {}
+        //       console.log(this)
+        //   })
     }
 }
